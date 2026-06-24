@@ -3,33 +3,245 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EEST N°3 - Sitio Institucional</title>
+    <title>Sitio Institucional - E.E.S.T. N° 3</title>
     <link rel="stylesheet" href="css/estilos.css">
+    <!-- Enlace a Bootstrap Icons (Librería de íconos vectoriales) -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 </head>
 <body>
 
+
     <header>
         <div class="logo">
-            <h2>EEST N°3</h2>
+            <h2>E.E.S.T. N° 3</h2>
         </div>
         <nav>
             <ul>
-                <li><a href="#inicio">Inicio</a></li>
-                <li><a href="#escuela">La Escuela</a></li>
+                <li><a href="#inicio" class="activo">Inicio</a></li>
                 <li><a href="#especialidades">Especialidades</a></li>
-                <li><a href="#inscripciones">Inscripciones</a></li>
+                <li><a href="#horarios">Horarios</a></li>
                 <li><a href="#contacto">Contacto</a></li>
             </ul>
         </nav>
     </header>
 
+
     <section id="inicio" class="hero">
         <div class="hero-contenido">
-            <h1>Escuela de Educación Secundaria Técnica N°3</h1>
-            <p>Formación profesional, innovación tecnológica y compromiso con el futuro.</p>
-            <a href="#contacto" class="btn-principal">Realizar una consulta</a>
+            <h1>La educación técnica hace a la industria nacional</h1>
+            <p>Frente a los desafíos de la actualidad, sostenemos nuestro compromiso histórico: formar técnicos capaces de transformar la realidad a través del conocimiento científico, la soberanía tecnológica y el desarrollo estratégico del país.</p>
+            <a href="#especialidades" class="btn-principal">Conocer Más</a>
         </div>
     </section>
 
-    </body>
+
+    <section id="especialidades" class="seccion-institucional">
+        <div class="seccion-titulo">
+            <h2>Nuestras Especialidades</h2>
+            <div class="linea-decorativa"></div>
+        </div>
+    
+        <div class="contenedor-tarjetas">
+         <div class="tarjeta">
+             <div class="tarjeta-icono"><i class="bi bi-laptop"></i></div>
+                <h3>Informática Profesional y Personal</h3>
+                <p>Formación enfocada en desarrollo de software, server-side logic, gestión avanzada de bases de datos y seguridad informática. Los estudiantes de esta especialidad cursan en el turno vespertino desde 4° hasta 7° año, preparándose para las demandas de la industria digital.</p>
+            </div>
+
+
+            <div class="tarjeta">
+             <div class="tarjeta-icono"><i class="bi bi-capsule"></i></div>
+                <h3>Tecnología de los Alimentos</h3>
+                <p>Capacitación para el control de calidad, análisis de laboratorio y gestión de procesos productivos en la industria alimentaria, asegurando estándares normativos y desarrollo sustentable.</p>
+            </div>
+
+
+            <div class="tarjeta">
+                <div class="tarjeta-icono"><i class="bi bi-cpu"></i></div>
+                <h3>Técnico en Electrónica</h3>
+                <p>Orientada al diseño, mantenimiento y automatización de sistemas electrónicos complejos, robótica y desarrollo de hardware, combinando el trabajo intensivo de taller con sólidos fundamentos científicos.</p>
+         </div>
+        </div>
+    </section>
+
+
+    <section id="horarios" class="seccion-institucional fondo-alternativo">
+        <div class="seccion-titulo">
+            <h2>Organización de Turnos y Horarios</h2>
+            <div class="linea-decorativa"></div>
+        </div>
+
+
+        <div class="contenedor-horarios">
+            <div class="tabla-horaria">
+                <h3>Clases Teóricas / Laboratorio</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Turno</th>
+                            <th>Horario</th>
+                            <th>Destinatarios</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Mañana</strong></td>
+                            <td>07:20 a 12:00 hs</td>
+                            <td>Ciclo Básico y Ciclo Superior (Electrónica / Alimentos hasta 6°)</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Tarde</strong></td>
+                            <td>12:50 a 17:20 hs</td>
+                            <td>Ciclo Básico y Ciclo Superior</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Vespertino</strong></td>
+                            <td>17:50 a 22:00 hs</td>
+                            <td>Ciclo Superior (7° Año e Informática de 4° a 7°)</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+
+            <div class="tabla-horaria">
+                <h3>Actividades de Taller</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Turno</th>
+                            <th>Horario de Cursada</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Mañana</strong></td>
+                            <td>07:20 a 11:50 hs</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Tarde</strong></td>
+                            <td>12:50 a 17:30 hs</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+
+        <!-- Pizarra Digital sin emojis -->
+    <section class="seccion-noticias">
+        <div class="contenedor-noticias">
+            <h2 class="titulo-noticias">Pizarra Digital de Novedades</h2>
+            <p class="subtitulo-noticias">Comunicados oficiales de la Dirección y actividades del Centro de Estudiantes</p>
+        
+            <div class="noticias-grid">
+                <div class="tarjeta-noticia noticia-direccion">
+                    <div class="etiqueta-noticia direccion">Institucional</div>
+                    <h3>Cronograma de Exámenes - Febrero/Marzo</h3>
+                    <p>Se encuentran publicados los días y horarios para las mesas de examen de materias previas y equivalencias. Recordar presentarse con uniforme y libreta.</p>
+                    <!-- Ícono de reloj vectorial sutil -->
+                    <span class="fecha-noticia"><i class="bi bi-clock"></i> Publicado hoy</span>
+                </div>
+
+
+            <div class="tarjeta-noticia noticia-centro">
+                <div class="etiqueta-noticia centro">Centro de Estudiantes</div>
+                    <h3>9 de Julio: Día de la Independencia Argentina</h3>
+                    <p>¡Se celebra el día de la Independencia en la Técnica 3! Invitamos a los chicos de los tres turnos a sumarse al equipo que llevará a cabo el acto para homenajear a quienes lucharon por una Argentina libre.</p>
+                    <span class="fecha-noticia"><i class="bi bi-clock"></i> Hace 2 días</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="contacto" class="seccion-institucional">
+        <div class="seccion-titulo">
+            <h2>Contacto y Ubicación</h2>
+            <div class="linea-decorativa"></div>
+        </div>
+
+
+        <div class="contenedor-contacto">
+            <div class="info-mapa">
+                <div class="datos-contacto">
+                    <p><i class="bi bi-geo-alt" style="color: #38bdf8; margin-right: 8px;"></i> <strong>Dirección:</strong> Caxaraville y Friuli, Wilde, Avellaneda</p>
+                    <p><i class="bi bi-telephone" style="color: #38bdf8; margin-right: 8px;"></i> <strong>Teléfono:</strong> 4220-3820</p>
+                    <p><i class="bi bi-envelope" style="color: #38bdf8; margin-right: 8px;"></i> <strong>E-mail institucional:</strong> eest3avellaneda@abc.gob.ar</p>
+                    <p><i class="bi bi-instagram" style="color: #38bdf8; margin-right: 8px;"></i> <strong>Instagram Oficial:</strong> <a href="https://www.instagram.com/tecnica3avellaneda" target="_blank" style="color: #38bdf8; text-decoration: none; font-weight: bold;">@tecnica3avellaneda</a></p>
+                </div>
+                <div class="mapa-contenedor">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3280.20165997275!2d-58.3308960242557!3d-34.70012707292211!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a3329b6bc94f7d%3A0x13646945b6e06fcc!2sEscuela%20de%20Educaci%C3%B3n%20Secundaria%20T%C3%A9cnica%20(EEST)%20N%C2%BA3%20%22Rep%C3%BAblica%20de%20M%C3%A9xico%22!5e0!3m2!1ses-419!2sar!4v1716684000000!5m2!1ses-419!2sar" width="100%" height="250" style="border:0; border-radius: 8px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+             </div>
+         </div>
+
+
+        <div class="formulario-consultas">
+            <h3>Enviar una consulta a Secretaría</h3>
+            <form action="mailto:jn8550738@gmail.com" method="GET" enctype="text/plain">
+        
+                <div class="grupo-campo">
+                    <label for="nombre">Nombre y Apellido del Adulto Responsable</label>
+                    <input type="text" name="Nombre_y_Apellido" id="nombre" placeholder="Ej: María Soría" required>
+                </div>
+                <div class="grupo-campo">
+                    <label for="email">Correo Electrónico de Contacto</label>
+                    <input type="email" name="Correo_Contacto" id="email" placeholder="ejemplo@correo.com" required>
+                </div>
+                <div class="grupo-campo">
+                    <label for="mensaje">Consulta o Duda Administrativa</label>
+                    <textarea name="Consulta_Detallada" id="mensaje" rows="4" placeholder="Escriba aquí su consulta detallada..." required></textarea>
+                </div>
+        
+                <button type="submit" class="btn-formulario">Enviar Consulta (Abrir Correo)</button>
+            </form>
+        </div>
+    </section>
+
+
+    <footer class="pie-pagina">
+        <div class="contenedor-footer">
+            <p class="footer-texto-principal">Escuela de Educación Secundaria Técnica N° 3 "República de México"</p>
+            <p class="footer-subtexto">Wilde, Avellaneda • Sitio institucional en desarrollo</p>
+            <div class="linea-decorativa-footer"></div>
+            <p class="footer-creditos">Diseñado y Desarrollado por el Departamento de Informática — 7mo Año</p>
+        </div>
+    </footer>
+
+
+        <!-- Script para Navegación Activa Dinámica (Scrollspy) -->
+    <script>
+        const secciones = document.querySelectorAll('section[id], div[id="inicio"]');
+        const enlacesMenu = document.querySelectorAll('nav a, .menu a'); // Ajustá esto según tus etiquetas de menú
+
+
+        const opciones = {
+            root: null,
+            rootMargin: '-30% 0px -60% 0px', // Activa el cambio cuando la sección ocupa el centro de la pantalla
+            threshold: 0
+        };
+
+
+        const observador = new IntersectionObserver((entradas) => {
+            entradas.forEach(entrada => {
+                if (entrada.isIntersecting) {
+                    const idSeccion = entrada.target.getAttribute('id');
+                
+                    enlacesMenu.forEach(enlace => {
+                        enlace.classList.remove('activo');
+                        if (enlace.getAttribute('href') === `#${idSeccion}`) {
+                        enlace.classList.add('activo');
+                        }
+                    });
+             }
+            });
+        }, opciones);
+
+
+        secciones.forEach(seccion => observador.observe(seccion));
+    </script>
+
+
+</body>
 </html>

@@ -1,1 +1,539 @@
+/* ==========================================================================
+   Estilos Base y Tipografía
+   ========================================================================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    scroll-behavior: smooth;
+}
 
+
+body {
+    background-color: #0d121f; 
+    color: #ffffff;
+    line-height: 1.6;
+}
+
+
+/* Encabezado */
+header {
+    background-color: #060b13; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 8%;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    border-bottom: 1px solid rgba(139, 92, 246, 0.2);
+}
+
+
+header .logo h2 {
+    color: #ffffff;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+
+nav ul li {
+    margin-left: 30px;
+}
+
+
+nav ul li a {
+    color: #cbd5e1;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+
+nav ul li a:hover {
+    color: #a855f7; 
+}
+
+
+/* ==========================================================================
+   Sección Hero (Fondo con tu imagen escuela.jpeg)
+   ========================================================================== */
+.hero {
+    background: linear-gradient(rgba(13, 18, 31, 0.5), rgba(13, 18, 31, 0.95)), 
+                url('../assets/escuela.jpeg') no-repeat center center/cover;
+    height: 80vh; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 20px;
+}
+
+
+.hero-contenido h1 {
+    font-size: 44px;
+    max-width: 900px;
+    margin-bottom: 22px;
+    font-weight: 800;
+    color: #ffffff;
+    text-shadow: 0 4px 12px rgba(0,0,0,0.7);
+}
+
+
+.hero-contenido p {
+    font-size: 18px;
+    margin-bottom: 35px;
+    color: #cbd5e1;
+    max-width: 750px;
+    margin-left: auto;
+    margin-right: auto;
+    text-shadow: 0 2px 8px rgba(0,0,0,0.7);
+}
+
+
+.btn-principal {
+    display: inline-block;
+    background-color: #8b5cf6; 
+    color: #ffffff;
+    padding: 14px 36px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 20px rgba(139, 92, 246, 0.4);
+}
+
+
+.btn-principal:hover {
+    background-color: #7c3aed;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 25px rgba(139, 92, 246, 0.6);
+}
+
+
+/* ==========================================================================
+   Estructura Secciones Comunes
+   ========================================================================== */
+.seccion-institucional {
+    padding: 80px 8%;
+    background-color: #0d121f;
+}
+
+
+.fondo-alternativo {
+    background-color: #111827; /* Variación sutil de fondo */
+}
+
+
+.seccion-titulo {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+
+.seccion-titulo h2 {
+    font-size: 32px;
+    font-weight: 700;
+    color: #ffffff;
+}
+
+
+.linea-decorativa {
+    height: 4px;
+    width: 70px;
+    background-color: #8b5cf6;
+    margin: 12px auto 0 auto;
+    border-radius: 2px;
+}
+
+
+/* Tarjetas de Especialidades */
+.contenedor-tarjetas {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap; 
+}
+
+
+.tarjeta {
+    background-color: #161f38; 
+    border: 1px solid rgba(139, 92, 246, 0.1);
+    border-radius: 12px;
+    padding: 35px 25px;
+    width: 340px;
+    transition: all 0.3s ease;
+}
+
+
+.tarjeta:hover {
+    transform: translateY(-5px);
+    border-color: rgba(139, 92, 246, 0.4);
+    box-shadow: 0 10px 25px rgba(139, 92, 246, 0.15);
+}
+
+
+.tarjeta-icono {
+    font-size: 36px;
+    margin-bottom: 15px;
+}
+
+
+.tarjeta h3 {
+    font-size: 20px;
+    margin-bottom: 12px;
+    color: #ffffff;
+}
+
+
+.tarjeta p {
+    font-size: 14px;
+    color: #94a3b8;
+    line-height: 1.6;
+}
+
+
+/* ==========================================================================
+   Tablas de Horarios
+   ========================================================================== */
+.contenedor-horarios {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+
+.tabla-horaria h3 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: #a855f7;
+    border-left: 3px solid #8b5cf6;
+    padding-left: 10px;
+}
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #161f38;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+
+th, td {
+    padding: 14px 20px;
+    text-align: left;
+    font-size: 15px;
+}
+
+
+th {
+    background-color: #1e293b;
+    color: #ffffff;
+    font-weight: 600;
+    border-bottom: 2px solid rgba(139, 92, 246, 0.3);
+}
+
+
+td {
+    color: #cbd5e1;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+
+tr:last-child td {
+    border-bottom: none;
+}
+
+
+tr:hover td {
+    background-color: rgba(139, 92, 246, 0.05);
+}
+
+
+/* ==========================================================================
+   Contacto, Formulario y Mapa
+   ========================================================================== */
+.contenedor-contacto {
+    display: flex;
+    gap: 50px;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+
+.info-mapa, .formulario-consultas {
+    flex: 1;
+    min-width: 320px;
+}
+
+
+.datos-contacto {
+    background-color: #161f38;
+    padding: 25px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+
+.datos-contacto p {
+    font-size: 15px;
+    margin-bottom: 12px;
+    color: #cbd5e1;
+}
+
+
+.datos-contacto p:last-child {
+    margin-bottom: 0;
+}
+
+
+.mapa-contenedor {
+    border: 1px solid rgba(139, 92, 246, 0.2);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+
+/* Formulario */
+.formulario-consultas {
+    background-color: #161f38;
+    padding: 35px;
+    border-radius: 12px;
+    border: 1px solid rgba(139, 92, 246, 0.1);
+}
+
+
+.formulario-consultas h3 {
+    font-size: 20px;
+    margin-bottom: 25px;
+    color: #ffffff;
+}
+
+
+.grupo-campo {
+    margin-bottom: 20px;
+}
+
+
+.grupo-campo label {
+    display: block;
+    font-size: 14px;
+    color: #94a3b8;
+    margin-bottom: 8px;
+}
+
+
+.grupo-campo input, .grupo-campo textarea {
+    width: 100%;
+    padding: 12px 16px;
+    background-color: #0d121f;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 6px;
+    color: #ffffff;
+    font-size: 14px;
+    transition: all 0.3s ease;
+}
+
+
+.grupo-campo input:focus, .grupo-campo textarea:focus {
+    outline: none;
+    border-color: #8b5cf6;
+    box-shadow: 0 0 0 3px rgba(139, 92, 246, 0.2);
+}
+
+
+.btn-formulario {
+    width: 100%;
+    background-color: #8b5cf6;
+    color: #ffffff;
+    border: none;
+    padding: 14px;
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+
+.btn-formulario:hover {
+    background-color: #7c3aed;
+}
+
+
+/* --- ESTILOS DE LA PIZARRA DE NOTICIAS --- */
+.seccion-noticias {
+    background-color: #f8fafc;
+    padding: 50px 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+.contenedor-noticias {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+
+.titulo-noticias {
+    color: #0f172a; /* Azul ultra oscuro, muy profesional */
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 5px;
+    font-weight: 700;
+}
+
+
+.subtitulo-noticias {
+    color: #64748b;
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 16px;
+}
+
+
+.noticias-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+}
+
+
+.tarjeta-noticia {
+    background: #ffffff;
+    border-radius: 8px;
+    padding: 25px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+    border: 1px solid #e2e8f0;
+    position: relative;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+
+/* Efecto sutil al pasar el mouse (o tocar en el celular) */
+.tarjeta-noticia:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+
+.etiqueta-noticia {
+    display: inline-block;
+    padding: 4px 10px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+
+.etiqueta-noticia.direccion {
+    background-color: #e0f2fe;
+    color: #0369a1; /* Azul institucional */
+}
+
+
+.etiqueta-noticia.centro {
+    background-color: #fef3c7;
+    color: #b45309; /* Naranja/Dorado */
+}
+
+
+.tarjeta-noticia h3 {
+    color: #1e293b;
+    font-size: 18px;
+    margin-bottom: 10px;
+    line-height: 1.4;
+}
+
+
+.tarjeta-noticia p {
+    color: #475569;
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+
+.fecha-noticia {
+    font-size: 12px;
+    color: #94a3b8;
+    display: block;
+}
+/* Estado activo exclusivo para el menú dinámico */
+nav a.activo, .menu a.activo {
+    color: #8b5cf6 !important; /* Tu violeta real */
+    font-weight: bold;
+    border-bottom: 2px solid #8b5cf6; /* Opcional: una sutil línea abajo para marcarlo más */
+    transition: all 0.3s ease;
+}
+
+
+/* Anulamos el foco viejo del navegador para que no se dupliquen */
+nav a:focus, .menu a:focus, nav a:active, .menu a:active {
+    color: inherit; 
+    outline: none;
+}
+/* --- FOOTER ALARGADO DE FORMA INTELIGENTE --- */
+.pie-pagina {
+    background-color: #0b111e; /* El fondo oscuro */
+    text-align: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+    font-family: 'Segoe UI', sans-serif;
+    
+    /* RELLENO INICIAL Y ALTURA MÍNIMA: */
+    padding-top: 60px; 
+    /* Esto obliga al footer a estirarse el 40% de la pantalla del usuario, 
+       empujando a "Contacto" al medio exacto antes de que se termine la página */
+    min-height: 40vh; 
+}
+
+
+.contenedor-footer {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+
+.footer-texto-principal {
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+
+.footer-subtexto {
+    color: #94a3b8;
+    font-size: 13px;
+    margin-bottom: 20px;
+}
+
+
+.linea-decorativa-footer {
+    height: 1px;
+    width: 60px;
+    background-color: #8b5cf6; /* Tu violeta en el footer */
+    margin: 0 auto 20px auto;
+}
+
+
+.footer-creditos {
+    color: #64748b;
+    font-size: 11px;
+    letter-spacing: 0.5px;
+}
