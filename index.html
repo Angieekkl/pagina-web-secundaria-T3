@@ -12,14 +12,18 @@
 
 
     <header>
+
         <div class="logo">
             E.E.S.T. N° 3
-
             <span>República de México</span>
-
         </div>
 
-        <nav>
+        <button class="menu-toggle" id="menuToggle">
+            ☰
+        </button>
+
+        <nav id="menuPrincipal">
+
             <ul>
 
                 <li>
@@ -53,7 +57,9 @@
                 </li>
 
             </ul>
+
         </nav>
+
     </header>
 
 
@@ -495,6 +501,33 @@
             elemento.classList.toggle('mostrar');
 
         }
+        
+        /* NUEVO - Menu hamburguesa */
+
+        const menuToggle =
+        document.getElementById("menuToggle");
+
+        const menuPrincipal =
+        document.getElementById("menuPrincipal");
+
+        menuToggle.addEventListener("click", () => {
+
+            menuPrincipal.classList.toggle("activo");
+
+        });
+
+        const enlacesMovil =
+        document.querySelectorAll("#menuPrincipal a");
+
+        enlacesMovil.forEach(enlace => {
+
+            enlace.addEventListener("click", () => {
+
+                menuPrincipal.classList.remove("activo");
+
+            });
+
+        });
 
     </script>
 
