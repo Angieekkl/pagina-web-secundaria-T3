@@ -12,12 +12,12 @@
 
 
     <header>
-        <h1 class="logo">
+        <div class="logo">
             E.E.S.T. N° 3
 
             <span>República de México</span>
 
-        </h1>
+        </div>
 
         <nav>
             <ul>
@@ -368,8 +368,8 @@
 
             <div class="quienes-imagen">
 
-                <img src="img/directivos.jpg"
-                    alt="Equipo Directivo">
+                <img src="assets/salon4.jpg"
+                    alt="Ejemplo de espacio en donde deberia estar foto/presentación del equipo Directivo">
 
             </div>
 
@@ -458,24 +458,29 @@
 
         const opciones = {
             root: null,
-            rootMargin: '-30% 0px -60% 0px',
-            threshold: 0
+            rootMargin: '-45% 0px -45% 0px',
+            threshold: 0.25
         };
 
         const observador = new IntersectionObserver((entradas) => {
-            entradas.forEach(entrada => {
-                if (entrada.isIntersecting) {
-                    const idSeccion = entrada.target.getAttribute('id');
-                
-                    enlacesMenu.forEach(enlace => {
-                        enlace.classList.remove('activo');
 
-                        if (enlace.getAttribute('href') === `#${idSeccion}`) {
-                            enlace.classList.add('activo');
-                        }
-                    });
-                }
+            entradas.forEach(entrada => {
+
+                if (!entrada.isIntersecting) return;
+
+                const id = entrada.target.id;
+
+                enlacesMenu.forEach(enlace => {
+
+                    enlace.classList.toggle(
+                        "activo",
+                        enlace.getAttribute("href") === `#${id}`
+                    );
+
+                });
+
             });
+
         }, opciones);
 
         secciones.forEach(seccion => observador.observe(seccion));
